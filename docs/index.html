@@ -1,62 +1,147 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Diagho | Outil d'annotation et de d'interprétation de variations génomiques.</title>
-    <meta name="description" content="Outil d'annotation et de d'interprétation de variations génomiques.">
+    <title>Diagho | Outil d'annotation et d'interprétation de variations génomiques</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <meta property="og:title" content="Diagho">
-    <meta property="og:description" content="Outil d'annotation et de d'interprétation de variations génomiques">
+    <meta property="og:description" content="Outil d'annotation et d'interprétation de variations génomiques">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://diagho.com">
     <meta property="og:image" content="https://diagho.com/assets/img/LOGO_DIAGHO_CMJN.png">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Diagho">
-    <meta name="twitter:description" content="Outil d'annotation et de d'interprétation de variations génomiques">
+    <meta name="twitter:description" content="Outil d'annotation et d'interprétation de variations génomiques">
     <meta name="twitter:image" content="https://diagho.com/assets/img/LOGO_DIAGHO_CMJN.png">
 
-    <link rel="stylesheet" href="/assets/css/base.54f0ea084cc75a6207fe.css">
-    <link rel="stylesheet" href="/assets/css/home.54f0ea084cc75a6207fe.css">
-    <link rel="stylesheet" href="/assets/css/vendors.5cb695278b946e1e741b.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <script src="./js/app.js" defer></script>
 </head>
-
 <body>
-    <section class="hero is-primary is-fullheight">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-6">
-                        <div class="block">
-                            <figure>
-                                <img src="/assets/img/LOGO_DIAGHO_BLANC.png" alt="logo">
-                            </figure>
-                        </div>
-                        <div class="block">
-                            <a class="button is-link" href="/newsletter/">Inscription à la newsletter</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="hero" id="page-top">
+        <img class="logo-diagho" src="./assets/img/Logo Diagho.png" alt="Logo Diagho" id="main-logo">
+        <div class="catchphrase">Mieux intégrer la médecine génomique dans le système de soins et permettre à un nombre important de patients de bénéficier d'une prise en charge diagnostique et thérapeutique plus personnalisée.</div>
+        <nav class="navbar" id="navbar-small">
+            <ul>
+                <a href="#overview" class="nav-link"><li>Présentation</li></a>
+                <a href="#screenshots" class="nav-link"><li>Interface</li></a>
+                <a href="#roadmap" class="nav-link"><li>Feuille de route</li></a>
+                <a href="#contact" class="nav-link"><li>Liens</li></a>
+                <a href="#sponsors" class="nav-link"><li>Nos partenaires</li></a>
+            </ul>
+        </nav>
+    </section>
+    <a id="overview"></a>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <a href="#page-top"><img src="./assets/img/Logo Diagho mini.png" alt="" height="72px"></a>
+            <a href="#overview" class="nav-link" id="chap1"><li>Présentation</li></a>
+            <a href="#screenshots" class="nav-link" id="chap2"><li>Interface</li></a>
+            <a href="#roadmap" class="nav-link" id="chap3"><li>Feuille de route</li></a>
+            <a href="#contact" class="nav-link" id="chap4"><li>Liens & contact</li></a>
+            <a href="#sponsors" class="nav-link" id="chap5"><li>Nos partenaires</li></a>
+        </ul>
+    </nav>
+    <div class="description-container">
+        <div class="separator-rainbow"></div>
+        <p class="description">
+            Diago est un logiciel d'interprétation de données de séquençage haut début permettant le traitement de données génétiques
+            depuis un fichier de variations jusqu'à la génération de rapports illustrés et de comptes rendus d'analyses. Il permet l'annotation,
+            le filtrage, la priorisation, la visualisation, l'interprétation des variations.<br><br>
+            Le projet a été initié par le GCS HUGO dans un contexte de développement de l’utilisation du séquençage dans les CHU du Grand Ouest 
+            pour un nombre croissant d’indications. Il s’agit d’organiser une réponse commune sur l’interprétation qui valorise le partage d’expertises
+            pour ces données très complexes à analyser.
+        </p>
+        <div class="separator-rainbow"></div>
+    </div>
 
-        <div class="hero-foot">
-            <nav class="tabs is-boxed">
-                <div class="container">
-                    <ul>
-                        <li class="is-active"><a href="https://diagho.com">Accueil</a></li>
-                        <li><a href="https://github.com/DiaghoProject">GitHub</a></li>
-                        <li><a href="https://www.chu-hugo.fr/">GCS HUGO</a></li>
-                        <li><a href="https://docs.diagho.com/">Documentation</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <section class="features-container">
+        <ul class="list-1 features-list">
+            <li class="feature" id="feat1">Panel, exome, génome, transcriptome</li>
+            <li class="feature" id="feat2">Constitutionnel et somatique</li>
+            <li class="feature" id="feat3">Interface web</li>
+            <li class="feature" id="feat4">Diagnostic et recherche</li>
+            <li class="feature" id="feat5">Norme ISO 15189</li>
+            <li class="feature" id="feat6">Pour cliniciens, biologistes et bioinformaticiens</li>
+            <li class="feature" id="feat7">Projet open source collaboratif</li>
+        </ul>
+        <ul class="list-2 features-list">
+            <li class="feature" id="feat8">Architecture modulaire et extensible permettant l'intégration de nouvelles fonctionnalités</li>
+            <li class="feature" id="feat9">Interface avec de nombreux outils&nbsp;: OMIM, UCSC, Decipher, HPO, PubMed, Varsome, Mutalyzer,...</li>
+            <li class="feature" id="feata">Base de données commune de variations</li>
+        </ul>
+    </section>
+
+    <section class="screenshots-container">
+        <a class="anchor" id="screenshots"></a>
+        <div class="screenshots-laptop">
+            <img src="./assets/img/Screen1.png" alt="Screenshot" class="screenshot" id="ss1">
+            <div class="screenshots-keyboard"></div>
+        </div>
+    </section>
+
+    <a class="anchor" id="roadmap"></a>
+    <section class="roadmap-container">
+        <div class="roadmap-arrow"></div>
+        <div class="roadmap-box roadmap-up"><div class="roadmap-content">Exome</div></div>
+        <div class="roadmap-box roadmap-down"><div class="roadmap-content">Génome</div></div>
+        <div class="roadmap-box roadmap-up"><div class="roadmap-content">BDD commune</div></div>
+        <div class="roadmap-box roadmap-down"><div class="roadmap-content">Transcriptome</div></div>
+        <div class="roadmap-box roadmap-up"><div class="roadmap-content">Somatique</div></div>
+    </section>
+
+    <a class="anchor" id="hugo"></a>
+    <section class="objective-container">
+        <div class="objective-diagram">
+            <div class="gcshugo">GCS<br>HUGO</div>
+            <div class="objective-box" id="box-1">Partager les expertises</div>
+            <div class="objective-box" id="box-2">Homogénéiser les pratiques</div>
+            <div class="objective-box" id="box-3">Mutualiser les coûts d'interprétation</div>
+            <div class="objective-box" id="box-4">Être innovants</div>
+            <div class="objective-box" id="box-5">Maîtriser les données produites</div>
+        </div>
+    </section>
+
+    <a class="anchor" id="contact"></a>
+    <section class="contact-container">
+        <a href="https://docs.diagho.com/"><button class="contact-btn"><img class="logo-btn" src="./assets/img/book.svg">Documentation</button></a><br>
+        <a href="https://github.com/DiaghoProject/"><button class="contact-btn"><img class="logo-btn" src="./assets/img/github.svg">GitHub</button></a><br>
+        <div class="separator"></div>
+        <span>Envie d'entrer en contact avec nous&nbsp;?</span><br>
+        <a href="mailto:contact@diagho.com"><button id="mail-btn" class="contact-btn"><span></span></button></a><br>
+        <span>Pour suivre nos progrès&nbsp;:</span><br>
+        <a href="./newsletter"><button id="newsletter-btn" class="contact-btn">S'abonner à la newsletter</button></a>
+    </section>
+
+    <section class="sponsors-container">
+        <a class="anchor" id="sponsors"></a>
+        <div class="logo-main-sponsors">
+            <a href="https://www.chu-hugo.fr/accueil/"><img src="./assets/img/Logo HUGO.png" alt="Logo GCS HUGO" class="logo-hugo"></a>
+        </div>
+        <div class="logo-chu-container">
+                <a href="https://www.chu-angers.fr/"><img src="./assets/img/Logo Angers.jpg" class="logo-chu" alt="CHU Angers"></a>
+                <a href="https://www.chu-brest.fr/fr"><img src="./assets/img/Logo Brest.jpg" class="logo-chu" alt="CHU Brest"></a>
+                <a href="https://www.chu-nantes.fr/"><img src="./assets/img/Logo Nantes.jpg" class="logo-chu" alt="CHU Nantes"></a>
+                <a href="https://www.chr-orleans.fr/"><img src="./assets/img/Logo Orleans.jpg" class="logo-chu" alt="CHU Orléans"></a>
+                <a href="https://www.chu-rennes.fr/"><img src="./assets/img/Logo Rennes.jpg" class="logo-chu" alt="CHU Rennes"></a>
+                <a href="https://www.chu-tours.fr/"><img src="./assets/img/Logo Tours.jpg" class="logo-chu" alt="CHU Tours"></a>
+                <a href="https://www.institut-cancerologie-ouest.com/"><img src="./assets/img/Logo Cancéro.jpg" class="logo-chu" alt="Institut de Cancérologie de l'Ouest"></a>
+                <a href="https://www.chd-vendee.fr/"><img src="./assets/img/Logo Vendée.jpg" class="logo-chu" alt="CHD Vendée"></a>
+                <a href="https://www.ch-lemans.fr/espace-patients/demande-ou-annulation-report-de-rendez-vous/"><img src="./assets/img/Logo Le Mans.jpg" class="logo-chu" alt="Logo "></a>
+        </div>
+        <div class="other-logo-container">
+            <a href="https://bioinfo-diag.fr/"><img src="./assets/img/Logo Bioinfodiag.png" alt="BioInfoDiag" class="other-logo"></a>
+            <a href="https://www.girci-go.org/"><img src="./assets/img/Logo GIRCI.jpg" alt="Girci GO" class="other-logo"></a>
+            <a href="https://www.girci-go.org/reseaux/gem-excell-reseau-genetique-genomique/"><img src="./assets/img/Logo GEM.jpg" alt="GEM EXCELL" class="other-logo"></a>
         </div>
     </section>
 </body>
-
 </html>
